@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Border and Background</title>
+    <style>
+       #firstpara{
+            background-color: red;
+            height: 100px;
+            width: 200px;
+            border-width: 4px;
+            border-style: solid;
+            border-color: violet;
+            border-radius: 10px;
+       }
+       h2{
+           color: lime;
+           background-color: black;
+           width: 500px;
+           border: 4px solid skyblue;  /*Single line*/
+           /* border-color: skyblue;
+           border-style: solid;
+           border-width: 4px; */
+           border-radius: 50px;
+       }
+       #secondpara{
+        background-color: rgb(13, 12, 14);
+        color: rgb(17, 192, 47);
+            height: 100px;
+            width: 200px;
+           border-top: 6px solid red;
+           border-left: 6px solid yellow;
+           border-bottom:6px solid green;
+           border-right: 6px solid blue;
+           border-top-left-radius: 10px;
+           border-bottom-left-radius: 20px;
+           border-bottom-right-radius: 20px;
+           border-top-right-radius: 10px;
+       }
+       #thirdpara{
+           color: rgb(15, 14, 15);
+            height: 300px;
+            width: 400px;
+            background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjA2Nzr-YnIqGBPTu4NiVV7HVLfNdSXjwBMQ&usqp=CAU');
+            border-top: 6px solid red;
+           border-left: 6px solid yellow;
+           border-bottom:6px solid green;
+           border-right: 6px solid blue;
+           border-top-left-radius: 10px;
+           border-bottom-left-radius: 20px;
+           border-bottom-right-radius: 20px;
+           border-top-right-radius: 10px;
+           /* repeat-x=> repeat on x axis;repeat-y=>repeat on y axis */
+           background-repeat: no-repeat; 
+           background-position: 40px 50px; /*xpx ypx*/
+       }
+    </style>
+</head>
+<body>
+    <h2>Height,Width,Border & Background</h2>
+    <p id="firstpara">this is a paragraph</p>
+    <p id="secondpara">this is second paragraph</p>
+    <p id="thirdpara">this is third paragraph</p>
+</body>
+</html>

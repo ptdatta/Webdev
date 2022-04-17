@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Events</title>
+</head>
+<style>
+    #btn{
+        background-color: rgb(255, 0, 0);
+        border: 2px solid black;
+        color:azure;
+        padding: 8px 10px;
+        font-weight: bold;
+        border-radius: 10px;
+    }
+</style>
+<body>
+    <!-- Browser Event:
+    click
+    contextmanu
+    mouseover/mouseout
+    mousedown/mouseup
+    mousemove
+
+    submit
+    focus
+
+    DOMContentLoaded
+
+    Onchange-  An HTML element has been changed
+    Onclick- The user clicks an HTML element
+    Onmouseover-   The user moves the mouse over an HTML element
+    Onmouseout-The user moves the mouse away from an HTML element
+    Onkeydown- The user pushes a keyboard key
+    Onload- The browser has finished loading the page
+
+    transitioned -->
+    <div class="container">
+        <h1>This is my heading</h1>
+        <p id="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate ullam vitae, cum nostrum provident amet, voluptatem necessitatibus veniam explicabo fugiat inventore nesciunt, sed eos et ab quos. Sed reiciendis laudantium, suscipit sequi ut quibusdam autem quidem asperiores eum tenetur harum voluptatem odit est id illum dolorum! Odit quas aliquam doloremque nobis reprehenderit animi natus odio modi blanditiis quae voluptatum veniam dolores tempore, voluptates numquam ipsa mollitia magnam! Reprehenderit itaque voluptatum distinctio. Culpa nam nobis facilis, magni numquam eligendi harum consequuntur saepe corporis quas blanditiis quos tenetur possimus vitae iure?</p>
+        time now is <span id="time"></span>
+    </div>
+    <button id="btn" onclick="togglehide()">Show/Hide</button>
+    <script>
+        let para=document.getElementById('para');
+        para.addEventListener('mouseover',function run(){
+        //   alert('mouse inside');
+          console.log('mouse inside');
+        });
+        para.addEventListener('mouseout',function run(){
+        //   alert('mouse ouside');
+          console.log('mouse outside');
+        });
+
+        function togglehide(){
+            let btn=document.getElementById('btn');      //without using getelement we still use this
+            let para=document.getElementById('para');
+            if(para.style.display!='none'){
+                para.style.display='none';
+            }else{
+                para.style.display='block';
+            }
+        }
+
+        // SetInterval & Settimeout()-->
+        // setTimeout-->Allows us to run the function once after the interval of Time
+        // clearTimeout--> Allows us to run the function repeatedly after the interval of time
+        // Here time take in ms(1000ms=>1s)
+        function greet(name,byetext){
+            console.log("hello,good morning " + name + byetext);
+        }
+        timeoutID=setTimeout(greet,5000,"Parthib","take care");  //only fun name not fun name()
+        // console.log(timeoutID);   //returns timeout ID
+        // clearTimeout(timeout);   //clear set timeout
+
+        IntervalID=setInterval(greet,1000,"Parthib","take care"); 
+        console.log(IntervalID)
+        clearInterval(IntervalID);
+
+        function displayTime(){
+            time=new Date();
+            console.log(time);
+            document.getElementById('time').innerHTML=time;
+        }
+        setInterval(displayTime,1000);
+    </script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+    <style>
+        /* element selector */
+        p {
+            border: 2px solid orangered;
+        }
+        /* Id and class selector */
+        /* For id use '#' for class use '.' */
+        #lemonElement {
+            color: lawngreen;
+            background-color: black;
+        }
+
+        .blueElement {
+            color: blue;
+            background-color: orange;
+        }
+
+        footer,
+        span {
+            background-color: pink;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>CSS Selectors</h2>
+    <p id="1stpara" class="blueElement">Thi is a simple paragraph to demonstrate CSS Selectors</p>
+    <p id="lemonElement">Thi is another simple paragraph to demonstrate CSS Selectors</p>
+    <div>
+        <p>Thi is yet another simple paragraph inside div to demonstrate CSS Selectors</p>
+        <span>This is span</span>
+    </div>
+    <hr>
+    <footer>This is footer</footer>
+</body>
+
+</html>

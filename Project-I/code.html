@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blackarrow Gym</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inspiration&family=Ubuntu:wght@500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+            background: url('gym-coronavirus.jpg');
+            background-size: 1500px 1000px;
+            background-repeat: no-repeat;
+            height: 900px;
+            color: blueviolet;
+            font-family: 'Ubuntu', sans-serif;
+        }
+
+        .left {
+            position: absolute;
+            left: 15px;
+            top: 32px;
+            display: inline-block;
+            /* border: 2px solid red; */
+        }
+
+        .left img {
+            width: 59px;
+            filter: invert(100);
+            padding: 0px 5px;
+            display: block;
+            float: left;
+        }
+
+        .left div {
+            text-align: left;
+            font-size: 26px;
+            line-height: 19px;
+            padding-top: 9px;
+        }
+
+        .mid {
+            display: block;
+            margin: 20px auto;
+            width: 54%;
+            /* border: 2px solid red; */
+        }
+
+        .right {
+            position: absolute;
+            right: 34px;
+            top: 20px;
+            display: inline-block;
+            /* border: 2px solid red; */
+            font-weight: bold;
+        }
+
+        .navber {
+            display: inline-block;
+        }
+
+        .navber li {
+            display: inline-block;
+            font-size: 25px;
+        }
+
+        .navber li a {
+            color: blueviolet;
+            text-decoration: none;
+            padding: 34px 15px;
+            font-weight: bold;
+
+        }
+
+        .navber li a:hover,
+        .navber li a.active {
+            text-decoration: underline;
+            color: gray;
+        }
+
+        .btn {
+            margin: 16px 7px;
+            padding: 4px 14px;
+            border: 4px solid skyblue;
+            border-radius: 10px;
+            font-size: 15px;
+            cursor: pointer;
+            font-family: 'Ubuntu', sans-serif;
+            background-color: white;
+            color: black;
+        }
+
+        .btn:hover {
+            background-color: gray;
+        }
+
+        .container {
+            /* border: 3px solid black; */
+            color: blueviolet;
+            margin: 30px 69px;
+            padding: 65px;
+            width: 33%;
+            border-radius: 28px;
+        }
+
+        .from-group input {
+            text-align: center;
+            display: block;
+            width: 348px;
+            padding: 4px;
+            border: 2px solid black;
+            margin: 3px auto;
+            background-color: transparent;
+            font-size: 19px;
+            border-radius: 10px;
+            font-family: 'Ubuntu', sans-serif;
+        }
+
+        .container h1 {
+            text-align: center;
+            font-size: 26px;
+        }
+
+        .container button {
+            display: block;
+            margin: auto;
+            width: 23%;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="left">
+            <!-- left box for logo -->
+            <img src="logo.jpg" alt="">
+            <div>MotaHati's Gym Center</div>
+        </div>
+        <div class="mid">
+            <!-- mid box for navber -->
+            <ul class="navber">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">Fitness Calculator</a></li>
+                <li><a href="#">Contact us</a></li>
+                <li><a href="#">About us</a></li>
+            </ul>
+        </div>
+        <div class="right">
+            <!-- right box for buttons -->
+            <button class="btn">Call us</button>
+            <button class="btn">Email us</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>
+            Join the best gym of Baruipur now
+        </h1>
+        <form action="noaction.php">
+            <div class="from-group">
+                <input type="text" name="" placeholder="Enter your name">
+            </div>
+            <div class="from-group">
+                <input type="text" name="" placeholder="Enter your age">
+            </div>
+            <div class="from-group">
+                <input type="text" name="" placeholder="Enter your sex">
+            </div>
+            <div class="from-group">
+                <input type="text" name="" placeholder="Enter your Address">
+            </div>
+            <div class="from-group">
+                <input type="text" name="" placeholder="Enter your Phone No">
+            </div>
+            <div class="from-group">
+                <input type="text" name="" placeholder="Enter your Email Id">
+            </div>
+            <button class="btn">Register</button>
+        </form>
+    </div>
+</body>
+
+</html>

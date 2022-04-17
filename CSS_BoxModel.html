@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+    <style>
+        *{               /* "*"=>Universal selector*/
+            /* box-sizing: border-box; */
+        }
+        body{
+            background-color: cyan;
+        }
+        h1{
+            color: lime;
+            background-color: black;
+            padding: 20px 100px;  /*padding=>xpx ypx*/
+            border-radius: 20px;
+            margin-right: 20px;
+        }
+        .container{
+            background-color: bisque;
+            border: 4px solid red;
+            /* padding-top: 30px;
+            padding-bottom: 30px;
+            padding-left: 20px; */
+            padding: 23px 56px 6px 78px;      /* padding=>top right bottom left */
+            margin-bottom: 34px;
+            margin-top: 34px;
+            margin-right: 20px;
+            border-radius: 23px;
+            margin-left: 50px;
+            width: 400px;
+            /* box-sizing: border-box; */
+            /* box sizing =>if u move the left then only left is move not right */
+        }
+    </style>
+</head>
+<body>
+    <h1>Box Model,Margin,Pading</h1>
+    <div class="container">
+        <h3>this is heading</h3>
+        <p id="first">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat consequatur sequi beatae ea reiciendis veritatis, sed quis at possimus commodi doloremque iste ipsa dignissimos officia nulla molestias, facilis nostrum eveniet.</p>
+    </div>
+    <div class="container">
+        <h3>this is heading</h3>
+        <p id="second">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat consequatur sequi beatae ea reiciendis veritatis, sed quis at possimus commodi doloremque iste ipsa dignissimos officia nulla molestias, facilis nostrum eveniet.</p>
+    </div>
+    <div class="container">
+        <h3>this is heading</h3>
+        <p id="third">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat consequatur sequi beatae ea reiciendis veritatis, sed quis at possimus commodi doloremque iste ipsa dignissimos officia nulla molestias, facilis nostrum eveniet.</p>
+    </div>
+</body>
+</html>

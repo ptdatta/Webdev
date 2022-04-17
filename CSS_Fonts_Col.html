@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Fonts & Color</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inspiration&display=swap" rel="stylesheet">
+    <style>
+        p{
+            font-family: 'Inspiration', cursive;
+            font-size: 40px;   /*pixel=>1/96th of an inch*/
+            line-height: 1.3em;  
+        }
+        span{
+            font-weight: bold;
+            font-style: italic;
+            color: violet;
+        }
+        #firstpara{
+            color: red;           /*Colour by name*/
+        }
+        #secondpara{
+            color: rgb(161, 21, 131);   /*RGB*/
+        }
+        #thirdpara{
+            color: #27be40;    /*Colour by HEX value*/
+        }
+    </style>
+</head>
+<body>
+    <h2>CSS Fonts & Colours</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi earum temporibus <span> suscipit, labore aut</span> ipsam voluptatibus quis laudantium modi placeat. Consequuntur, autem voluptates. Aspernatur exercitationem quo dolor inventore commodi modi.</p>
+    <p id="firstpara">this is first paragraph</p>
+    <p id="secondpara">this is second paragraph</p>
+    <p id="thirdpara">this is third paragraph</p>
+</body>
+</html>

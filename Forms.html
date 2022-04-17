@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+
+<body>
+    <h2>HTML Froms</h2>
+    <form action="backend.php">
+        <label for="name">Name:</label>
+        <div>
+            <input type="text" name="myName" id="name">
+        </div>
+        <br>
+        <div>
+            Role: <input type="text" name="myRole">
+        </div>
+        <br>
+        <div>
+            Email: <input type="email" name="myEmail">
+        </div>
+        <br>
+        <div>
+            Date of Birth: <input type="date" name="myDate" id="">
+        </div>
+        <br>
+        <div>
+            Bonus: <input type="number" name="myBonus" id="">
+            <!--43e2=43^2-->
+        </div>
+        <br>
+        <div>
+            Are you eligible? <input type="checkbox" name="myEligibility" id="" checked>
+            <!--checked to make it checked by default-->
+        </div>
+        <br>
+        <div>
+            write about yourself: <br> <textarea name="myText" id="" cols="80" rows="15"></textarea>
+        </div>
+        <br>
+        <div>
+            <label for="car">car</label>
+            <select name="myCar" id="car">
+                <option value="BMW">BMW</option>
+                <option value="Mercedes" selected>Mercedes</option>
+                <!--by default selected-->
+                <option value="Audi">Audi</option>
+            </select>
+        </div>
+        <br>
+        <div>
+            <!-- If name changed then we can select multiple -->
+            Gender: Male<input type="radio" name="myGender" id="">
+            Female<input type="radio" name="myGender" id="">
+            Other<input type="radio" name="myGender" id="">
+        </div>
+        <br>
+        <div>
+            <input type="submit" value="Submit Now">
+            <input type="reset" value="Reset Now">
+        </div>
+    </form>
+</body>
+
+</html>

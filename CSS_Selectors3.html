@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Before and After Pseudo Selectors</title>
+</head>
+<style>
+    body {
+        background-color: black;
+        color: white;
+        margin: 0px;
+        padding: 0px;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+
+    section {
+        display: flex;
+        margin: 3px 181px;
+        flex-direction: column;
+        align-items: center;
+        height: 186px;
+        justify-content: center;
+    }
+
+    /* section::after {
+        content: "this is a content";
+    } */
+    header::before{
+            background: url('https://source.unsplash.com/collection/190727/1600x900') no-repeat center center/cover;
+            content: "";
+            position: absolute;
+            top:0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            opacity: 0.5;
+        }
+
+    .navigation {
+        display: flex;
+        font-size: 20px;
+    }
+
+    li {
+        list-style: none;
+        padding: 4px 15px;
+    }
+
+    h3 {
+        font-size: 3rem;
+    }
+
+    p {
+        text-align: center;
+    }
+</style>
+
+<body>
+    <header>
+        <nav class="navber">
+            <ul class="navigation">
+                <li class="item">Home</li>
+                <li class="item">About</li>
+                <li class="item">Contact Us</li>
+                <li class="item">Services</li>
+            </ul>
+        </nav>
+        <section>
+            <h3>Welcome to Coding World</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem veritatis illum omnis nostrum! Porro
+                accusamus vero officia, nesciunt ratione rem expedita earum iste beatae soluta pariatur, vel quia
+                accusantium temporibus?Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias expedita ducimus, autem excepturi vel, quasi exercitationem iure facilis dolore corrupti consequuntur voluptatum iste! Modi in repudiandae impedit ab, sit odio.</p>
+        </section>
+    </header>
+</body>
+
+</html>

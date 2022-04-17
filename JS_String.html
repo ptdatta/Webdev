@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript String Function</title>
+    <style>
+
+    </style>
+</head>
+<body>
+    <script>
+        var str="this is a string in js";
+        console.log(str.indexOf('is'));  //index of 1st occurence
+        console.log(str.lastIndexOf('is'))  //index of last occurence
+        console.log(str.slice(5,12));   //it take -ve value
+        console.log(str.substring(5,12)); //it can't take -ve value
+        console.log(str.substr(5,12)); //count from 0.(lastfrom 5, take 12 ele)
+        console.log(str.replace('string','hello'))
+        console.log(str);   //old string will not change
+        console.log(str.toUpperCase())
+        console.log(str.toLowerCase())
+        console.log(str.concat('new string'))
+        var spaces='       hell      jfeuehf       jnwjnej    jkejd j j    ej  ';
+        console.log(spaces);
+        console.log(spaces.trim())  //eleminate 1st and last spaces
+        console.log(str.charAt(5),str[5]);  //Both are same
+        console.log(str.charCodeAt(4));   //return ASCII code
+    </script>
+</body>
+</html>

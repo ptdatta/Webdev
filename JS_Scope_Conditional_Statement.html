@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scope & Conditional Statement</title>
+</head>
+<body>
+    <script>
+        let a="u";   //for var we can define variable many time but for let only one time.
+        {
+            let a="u6";
+            console.log(a);  //u6
+        }
+        console.log(a); //u
+        let b="l";
+        {
+            console.log(a); //u
+        }
+        const v="this cannot be changed";
+        console.log(v);
+        // v="hello";
+        // console.log(v);
+
+        //if else -->
+        let age = 20;
+     if(age>18){
+         console.log("You can drink water");
+     }
+     else if(age==2){
+         console.log("Age is 2")
+     }
+     else if(age==5){
+         console.log("Age is 5")
+     }
+     else{
+         console.log("You can drink Cold Drink");
+     }
+
+    //  Switch case-->
+    const cups = 4; 
+    switch (cups) {
+        case 4:
+            console.log("The value of cups is 4")
+            break;
+
+        case 41:
+            console.log("The value of cups is 41")
+            break;
+
+        case 42:
+            console.log("The value of cups is 42")
+            break;
+
+        case 43:
+            console.log("The value of cups is 43")
+            break;
+    
+        default:
+            console.log("The value of cups is none of 4, 41, 42, 43")
+            break;
+    }
+    </script>
+</body>
+</html>

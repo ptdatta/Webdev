@@ -1,0 +1,22 @@
+{
+  "name": "codewithparthib",
+  "version": "1.0.0",
+  "description": "this is the best package ",
+  "main": "Execution.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "asome"
+  ],
+  "author": "Parthib",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.3",
+    "mongoose": "^6.2.9",
+    "slugify": "^1.6.5"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Sectors</title>
+    <style>
+        h1 {
+            background-color: red;
+            font-weight: bold;
+            color: rgb(13, 13, 65);
+            text-align: center;
+        }
+
+        /* div p {
+            color: yellow;
+            font-weight: bold;
+            background-color: green;
+        } */
+        div>p {
+            /*applied to the p which is direct under div or directly under div*/
+            color: yellow;
+            font-weight: bold;
+            background-color: green;
+        }
+
+        div+p {
+            /*applied to the p before which div is avalible*/
+            color: white;
+            background-color: blueviolet;
+        }
+
+
+
+        /* Attribute & nth child pseudo Selectors */
+        #two {
+            margin-top: 50px;
+        }
+
+        input {
+            display: block;
+        }
+
+        input[type='text'] {
+            /*pseudo selectors*/
+            padding: 23px;
+            border: 2px solid green;
+        }
+
+        .container2 {
+            display: block;
+            width: 233px;
+            margin: auto;
+        }
+
+        a[target] {
+            font-size: 34px;
+            color: violet;
+        }
+
+        a[target='_self'] {
+            font-size: 28px;
+            color: rgb(69, 33, 201);
+        }
+
+        input[type='email'] {
+            color: yellow;
+            border: 4px solid black;
+        }
+
+        li:nth-child(3) {
+            /*nth item*/
+            color: cyan;
+        }
+
+        li:nth-child(3n+1) {
+            /*alternative nth(n=0,1,2,....) element*/
+            color: rgb(210, 71, 223);
+        }
+
+        li:nth-child(odd) {
+            /*odd elements*/
+            background-color: rgb(152, 194, 36);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- More Selectors -->
+    <h1>this is more on selectors</h1>
+    <div class="container1">
+        <div class="row">
+            <ul>
+                <li class="item">
+                    <p>this is another paragraph</p>
+                </li>
+                <p>this is a para inside ul</p>
+            </ul>
+            <p>this is a paragraph</p>
+        </div>
+        <p>this is another paragraph</p>
+    </div>
+    <p>this is outer most paragraph</p>
+
+    <!-- Attribute & nth child pseudo Selectors -->
+    <h1 id="two">Attribute & nth child pseudo Selectors</h1>
+    <div class="container2">
+        <h2><a href="http://google.com" target="_blank">Go to google</a></h2>
+        <h2><a href="http://facebook.com" target="_self">Go to facebook</a></h2>
+        <form action="" class="form-control">
+            <input type="text" placeholder="Enter your name">
+            <input type="password" placeholder="Enter your password">
+            <input type="email" placeholder="Enter your email">
+            <input type="submit" value="submit">
+        </form>
+        <ul>
+            <li class="item" id="item-1">item-1</li>
+            <li class="item" id="item-2">item-2</li>
+            <li class="item" id="item-3">item-3</li>
+            <li class="item" id="item-4">item-4</li>
+            <li class="item" id="item-5">item-5</li>
+            <li class="item" id="item-6">item-6</li>
+            <li class="item" id="item-7">item-7</li>
+            <li class="item" id="item-8">item-8</li>
+            <li class="item" id="item-9">item-9</li>
+            <li class="item" id="item-10">item10</li>
+        </ul>
+    </div>
+</body>
+
+</html>
